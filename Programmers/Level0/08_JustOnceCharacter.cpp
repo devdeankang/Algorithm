@@ -13,14 +13,7 @@ string solution(string s) {
     
     for (auto ch : s)
     {
-        if (m.find(ch) == m.end())
-        {
-            m.insert({ ch, 1 });            
-        }
-        else
-        {
-            m[ch]++;            
-        }
+       m[ch]++;
     }
     
     for(auto it : m)
